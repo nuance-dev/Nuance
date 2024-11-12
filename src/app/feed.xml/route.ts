@@ -3,7 +3,7 @@ import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req: Request) {
-  let siteUrl = 'https://nuance.vercel.app'
+  let siteUrl = 'https://nuancedev.vercel.app'
 
   if (!siteUrl) {
     throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
