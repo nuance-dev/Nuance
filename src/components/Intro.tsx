@@ -6,8 +6,21 @@ import { SignUpForm } from '@/components/SignUpForm'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M7 3.41a1 1 0 0 0-.668-.943L2.275 1.039a.987.987 0 0 0-.877.166c-.25.192-.398.493-.398.812V12.2c0 .454.296.853.725.977l3.948 1.365A1 1 0 0 0 7 13.596V3.41ZM9 13.596a1 1 0 0 0 1.327.946l3.948-1.365c.429-.124.725-.523.725-.977V2.017c0-.32-.147-.62-.398-.812a.987.987 0 0 0-.877-.166L9.668 2.467A1 1 0 0 0 9 3.41v10.186Z" />
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M6 2v2" />
+      <path d="M10 2v2" />
+      <path d="M14 2v2" />
+      <path d="M18 8h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2" />
+      <path d="M4 8h14v9a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8z" />
     </svg>
   )
 }
@@ -51,11 +64,19 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
-        </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
+        <IconLink
+          href="https://github.com/nuance-dev"
+          icon={GitHubIcon}
+          className="flex-none"
+        >
           GitHub
+        </IconLink>
+        <IconLink
+          href="https://buymeacoffee.com/nuanced"
+          icon={BookIcon}
+          className="flex-none"
+        >
+          Buy me a coffee
         </IconLink>
       </div>
     </>
