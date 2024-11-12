@@ -1,5 +1,4 @@
 import { IconLink } from '@/components/IconLink'
-import { StarField } from '@/components/StarField'
 
 export default function NotFound() {
   return (
@@ -17,17 +16,16 @@ export default function NotFound() {
         </defs>
         <rect width="100%" height="100%" fill="url(#gradient)" />
       </svg>
-      <StarField className="sm:-mt-16" />
 
       <p className="font-display text-4xl/tight font-light text-white">404</p>
       <h1 className="mt-4 font-display text-xl/8 font-semibold text-white">
         Page not found
       </h1>
       <p className="mt-2 text-sm/6 text-gray-300">
-        Sorry, we couldn’t find the page you’re looking for.
+        You are not lost, just misplaced. Let’s get you home.
       </p>
       <IconLink href="/" className="mt-4">
-        Go back home
+        Take me there
       </IconLink>
     </div>
   )

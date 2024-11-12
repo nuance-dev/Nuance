@@ -1,7 +1,7 @@
 import Link from 'next/link'
-
+import Image from 'next/image'
 import { IconLink } from '@/components/IconLink'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/nuance.png'
 import { SignUpForm } from '@/components/SignUpForm'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -20,18 +20,6 @@ function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function FeedIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M2.5 3a.5.5 0 0 1 .5-.5h.5c5.523 0 10 4.477 10 10v.5a.5.5 0 0 1-.5.5h-.5a.5.5 0 0 1-.5-.5v-.5A8.5 8.5 0 0 0 3.5 4H3a.5.5 0 0 1-.5-.5V3Zm0 4.5A.5.5 0 0 1 3 7h.5A5.5 5.5 0 0 1 9 12.5v.5a.5.5 0 0 1-.5.5H8a.5.5 0 0 1-.5-.5v-.5a4 4 0 0 0-4-4H3a.5.5 0 0 1-.5-.5v-.5Zm0 5a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
-      />
-    </svg>
-  )
-}
-
 function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
@@ -45,10 +33,14 @@ export function Intro() {
     <>
       <div>
         <Link href="/">
-          <Logo className="inline-block h-8 w-auto" />
+          <Image
+            src={Logo}
+            alt="Nuance logo"
+            className="inline-block h-24 w-auto rounded-2xl border border-white/10 shadow-2xl transition hover:border-sky-800"
+          />
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
+      <h1 className="mt-6 font-display text-4xl/tight font-light text-white">
         Open-source Git client{' '}
         <span className="text-sky-300">for macOS minimalists</span>
       </h1>
@@ -65,9 +57,6 @@ export function Intro() {
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
           GitHub
         </IconLink>
-        <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
-        </IconLink>
       </div>
     </>
   )
@@ -76,9 +65,9 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Brought to you by{' '}
-      <IconLink href="#" icon={XIcon} compact>
-        Joe Davola
+      Follow{' '}
+      <IconLink href="https://twitter.com/Nuancedev" icon={XIcon} compact>
+        Nuanced
       </IconLink>
     </p>
   )

@@ -68,7 +68,7 @@ export function SignUpForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email address"
-            className="peer w-full bg-[#00000000] px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
+            className="peer w-full rounded-lg bg-[#00000000] px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
           />
           {/* Overlay to hide Safari autofill */}
           <div
