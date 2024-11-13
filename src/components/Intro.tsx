@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { IconLink } from '@/components/IconLink'
 import Logo from '@/images/nuance.png'
 import { SignUpForm } from '@/components/SignUpForm'
-import Terms from '@/components/Terms'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
