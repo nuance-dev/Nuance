@@ -5,8 +5,6 @@
   --typography-quotes-border: theme(colors.gray.200);
   --typography-links: theme(colors.sky.500);
   --typography-link-hover: theme(colors.sky.600);
-  --typography-link-underline: theme(colors.sky.400 / 0.4);
-  --typography-link-hover-underline: theme(colors.sky.600 / 0.4);
   --typography-pre: theme(colors.gray.300);
   --typography-pre-shadow: theme(boxShadow.md);
   --typography-bold: theme(colors.gray.900);
@@ -35,8 +33,6 @@
     --typography-quotes-border: theme(colors.gray.800);
     --typography-links: theme(colors.sky.400);
     --typography-link-hover: theme(colors.white);
-    --typography-link-underline: theme(colors.sky.400 / 0.4);
-    --typography-link-hover-underline: theme(colors.white / 0.4);
     --typography-pre: theme(colors.gray.400);
     --typography-pre-shadow: inset 0 0 0 1px theme(colors.white / 0.1);
     --typography-bold: theme(colors.white);
@@ -98,16 +94,12 @@
   a:not(h2 a) {
     font-weight: theme(fontWeight.semibold);
     color: var(--typography-links);
-    text-decoration: underline;
-    text-decoration-color: var(--typography-link-underline);
-    text-underline-offset: theme(textUnderlineOffset.2);
     transition-property: color, text-decoration-color;
     transition-duration: theme(transitionDuration.DEFAULT);
     transition-timing-function: theme(transitionTimingFunction.DEFAULT);
 
     &:hover {
       color: var(--typography-link-hover);
-      text-decoration-color: var(--typography-link-hover-underline);
     }
   }
 
