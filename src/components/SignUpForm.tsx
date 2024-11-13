@@ -2,6 +2,7 @@
 
 import { useId, useState } from 'react'
 import { Button } from '@/components/Button'
+import Terms from '@/components/Terms'
 
 export function SignUpForm() {
   const id = useId()
@@ -92,10 +93,7 @@ export function SignUpForm() {
           className="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-sky-300"
         />
         <label htmlFor="tnc" className="text-sm text-gray-500">
-          I accept the{' '}
-          <a href="/terms" className="text-blue-500 underline">
-            Terms and Conditions
-          </a>
+          I accept the <Terms />
         </label>
       </div>
 
