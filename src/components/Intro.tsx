@@ -67,6 +67,8 @@ export function Intro() {
           href="https://github.com/nuance-dev"
           icon={GitHubIcon}
           className="flex-none"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           GitHub
         </IconLink>
@@ -74,6 +76,8 @@ export function Intro() {
           href="https://buymeacoffee.com/nuanced"
           icon={BookIcon}
           className="flex-none"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Buy me a coffee
         </IconLink>
@@ -86,7 +90,13 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Follow{' '}
-      <IconLink href="https://twitter.com/Nuancedev" icon={XIcon} compact>
+      <IconLink
+        href="https://twitter.com/Nuancedev"
+        icon={XIcon}
+        compact
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Nuanced
       </IconLink>
     </p>
