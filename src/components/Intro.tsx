@@ -54,12 +54,11 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-6 font-display text-4xl/tight font-light text-white">
-        Native macOS apps <span className="text-sky-300">for minimalists</span>
+        Free macOS mini apps <span className="text-sky-300">for minimalists</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         I started building an alphabet of apps to improve my current workflows
-        as a designer/developer, I immediately decided to share them with the
-        community for free.
+        as a designer/developer, I then made them free to use.
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
