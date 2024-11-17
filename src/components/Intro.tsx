@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { IconLink } from '@/components/IconLink'
-import Logo from '@/images/nuance.png'
+import Finder from '@/images/finder.png'
 import { SignUpForm } from '@/components/SignUpForm'
 
 function BookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -47,8 +47,8 @@ export function Intro() {
       <div>
         <Link href="/">
           <Image
-            src={Logo}
-            alt="Nuance logo"
+            src={Finder}
+            alt="macOS finder logo"
             className="inline-block h-24 w-auto rounded-2xl border border-white/10 shadow-2xl transition hover:border-sky-800"
           />
         </Link>
