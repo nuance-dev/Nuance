@@ -23,9 +23,9 @@ const monaSans = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Nuanced - Open-source Git client for macOS minimalists',
+  title: 'Nuanced - An Alphabet of Free macOS mini-apps',
   description:
-    'Nuanced is a lightweight Git client you can open from anywhere any time you’re ready to commit your work with a single keyboard shortcut. It’s fast, beautiful, and completely unnecessary.',
+    'I am in the process of building 26 macOS open-source apps, one for each letter of the alphabet. To improve workflows and to have a bit of fun',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
