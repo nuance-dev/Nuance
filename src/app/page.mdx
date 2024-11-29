@@ -1,6 +1,7 @@
 import { SparkleIcon } from '@/components/SparkleIcon'
 export { Layout as default } from '@/components/Layout'
 import { Button } from '@/components/Button'
+import { DownloadButton } from '@/components/DownloadButton'
 
 ---
 
@@ -36,13 +37,7 @@ A lightweight, native macOS file compression app that intelligently handles PDFs
 - Keep original file name and folder path
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/achico/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Achico
-  </Button>
+  <DownloadButton appName="Achico.app">Download Achico</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/achico/issues"
     className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-900/10 px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-900/2.5 dark:border-white/10 dark:text-white dark:hover:bg-white/5"
@@ -51,6 +46,16 @@ A lightweight, native macOS file compression app that intelligently handles PDFs
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/achico"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -86,13 +91,7 @@ A sleek, native macOS app that removes backgrounds from images with a minimal in
 - Fine-tuning controls for removal
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/figura/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Figura
-  </Button>
+  <DownloadButton appName="Figura.app">Download Figura</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/figura/issues"
     target="_blank"
@@ -100,6 +99,16 @@ A sleek, native macOS app that removes backgrounds from images with a minimal in
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/figura"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -119,13 +128,7 @@ A minimal, native macOS app that transcribes both YouTube videos and local video
 - Dark and light mode support
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/vocal/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Vocal
-  </Button>
+  <DownloadButton appName="Vocal.app">Download Vocal</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/vocal/issues"
     className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-900/10 px-3 py-2 text-sm font-semibold text-zinc-900 hover:bg-zinc-900/2.5 dark:border-white/10 dark:text-white dark:hover:bg-white/5"
@@ -134,6 +137,16 @@ A minimal, native macOS app that transcribes both YouTube videos and local video
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/vocal"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -171,13 +184,7 @@ A fast, native macOS text comparison tool featuring real-time diff highlighting 
 - Find and replace functionality
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/medio/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Medio
-  </Button>
+  <DownloadButton appName="Medio.app">Download Medio</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/medio/issues"
     target="_blank"
@@ -185,6 +192,16 @@ A fast, native macOS text comparison tool featuring real-time diff highlighting 
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/medio"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -220,13 +237,7 @@ A sleek, native macOS app for managing tasks with intelligent priority scoring a
 - Advanced filtering options
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/impulso/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Impulso
-  </Button>
+  <DownloadButton appName="Impulso.app">Download Impulso</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/impulso/issues"
     target="_blank"
@@ -234,6 +245,16 @@ A sleek, native macOS app for managing tasks with intelligent priority scoring a
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/impulso"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -268,13 +289,7 @@ A sleek, native macOS app that helps you make better decisions through structure
 - Light mode
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/guia/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Guía
-  </Button>
+  <DownloadButton appName="Guia.app">Download Guía</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/guia/issues"
     target="_blank"
@@ -282,6 +297,16 @@ A sleek, native macOS app that helps you make better decisions through structure
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/guia"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
 
 ---
@@ -316,13 +341,7 @@ A sleek, native macOS app that splits files into three encrypted pieces and lets
 - I'm out of ideas on this one
 
 <div className="mt-6 flex gap-2">
-  <Button
-    href="https://github.com/nuance-dev/quiebro/releases/latest"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download Quiebro
-  </Button>
+  <DownloadButton appName="Quiebro.app">Download Quiebro</DownloadButton>
   <Button
     href="https://github.com/nuance-dev/quiebro/issues"
     target="_blank"
@@ -330,4 +349,14 @@ A sleek, native macOS app that splits files into three encrypted pieces and lets
   >
     Report Bug or Suggest Feature
   </Button>
+  <a
+    href="https://github.com/nuance-dev/quiebro"
+    className="ml-2 inline-flex items-center text-gray-400 hover:text-sky-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+    </svg>
+  </a>
 </div>
