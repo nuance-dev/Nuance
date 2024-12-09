@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: 'Nuanced',
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`,
+        url: `https://raw.githubusercontent.com/nuance-dev/nuance/3a7ed5fc03f2596dc82b2e2fa112e5fb955508c7/src/images/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'Nuanced - An Alphabet of Free macOS mini-apps',
@@ -53,7 +53,9 @@ export const metadata: Metadata = {
     description:
       'I am in the process of building 26 macOS open-source apps, one for each letter of the alphabet. To improve workflows and to have a bit of fun',
     creator: '@Nuancedev',
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`],
+    images: [
+      `https://raw.githubusercontent.com/nuance-dev/nuance/3a7ed5fc03f2596dc82b2e2fa112e5fb955508c7/src/images/og-image.jpg`,
+    ],
   },
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || 'https://nuanced.dev',
