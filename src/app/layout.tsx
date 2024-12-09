@@ -31,6 +31,33 @@ export const metadata: Metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
+  openGraph: {
+    type: 'website',
+    title: 'Nuanced - An Alphabet of Free macOS mini-apps',
+    description:
+      'I am in the process of building 26 macOS open-source apps, one for each letter of the alphabet. To improve workflows and to have a bit of fun',
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    siteName: 'Nuanced',
+    images: [
+      {
+        url: 'https://nuanced.dev/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Nuanced - An Alphabet of Free macOS mini-apps',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nuanced - An Alphabet of Free macOS mini-apps',
+    description:
+      'I am in the process of building 26 macOS open-source apps, one for each letter of the alphabet. To improve workflows and to have a bit of fun',
+    creator: '@Nuancedev',
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`],
+  },
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://nuanced.dev',
+  ),
 }
 
 export default function RootLayout({
