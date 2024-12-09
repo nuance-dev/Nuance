@@ -41,6 +41,14 @@ function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+export function RSSIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
+      <path d="M3.75 3a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-.5a.75.75 0 0 0-.75-.75h-8.5ZM3.75 5.75a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-.5a.75.75 0 0 0-.75-.75h-8.5ZM3 9.25a.75.75 0 0 1 .75-.75h8.5a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-.75.75h-8.5a.75.75 0 0 1-.75-.75v-.5ZM3.75 11.75a.75.75 0 0 0-.75.75v.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-.5a.75.75 0 0 0-.75-.75h-8.5Z" />
+    </svg>
+  )
+}
+
 export function Intro() {
   return (
     <>
@@ -54,7 +62,8 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-6 font-display text-4xl/tight font-light text-white">
-        Free macOS mini apps <span className="text-sky-300">for minimalists</span>
+        Free macOS mini apps{' '}
+        <span className="text-sky-300">for minimalists</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         I started building an alphabet of apps to improve my current workflows
@@ -97,6 +106,15 @@ export function IntroFooter() {
         rel="noopener noreferrer"
       >
         Nuanced
+      </IconLink>
+      <IconLink
+        href="/feed.xml"
+        icon={RSSIcon}
+        compact
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RSS
       </IconLink>
     </p>
   )
