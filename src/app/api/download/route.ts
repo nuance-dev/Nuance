@@ -8,12 +8,14 @@ const TIME_WINDOW = 3600000
 
 const GITHUB_FALLBACK = {
   'Achico.app': 'https://github.com/nuance-dev/achico/releases/latest',
+  'Convierto.app': 'https://github.com/nuance-dev/convierto/releases/latest',
   'Figura.app': 'https://github.com/nuance-dev/figura/releases/latest',
   'Vocal.app': 'https://github.com/nuance-dev/vocal/releases/latest',
   'Medio.app': 'https://github.com/nuance-dev/medio/releases/latest',
   'Impulso.app': 'https://github.com/nuance-dev/impulso/releases/latest',
   'Guia.app': 'https://github.com/nuance-dev/guia/releases/latest',
   'Quiebro.app': 'https://github.com/nuance-dev/quiebro/releases/latest',
+  'Uno.app': 'https://github.com/nuance-dev/uno/releases/latest',
 }
 
 const supabase = createClient(
