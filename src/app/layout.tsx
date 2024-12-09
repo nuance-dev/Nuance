@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: 'Nuanced',
     images: [
       {
-        url: 'https://nuanced.dev/og-image.jpg',
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'Nuanced - An Alphabet of Free macOS mini-apps',
