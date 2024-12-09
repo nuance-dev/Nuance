@@ -2,17 +2,7 @@ import { SparkleIcon } from '@/components/SparkleIcon'
 export { Layout as default } from '@/components/Layout'
 import { Button } from '@/components/Button'
 import { DownloadButton } from '@/components/DownloadButton'
-import dynamic from 'next/dynamic'
-
-const YouTubeEmbed = dynamic(
-() => import('@/components/YouTubeEmbed'),
-{
-loading: () => (
-<div className="aspect-video w-full animate-pulse bg-gray-200 dark:bg-gray-800" />
-),
-ssr: false
-}
-)
+import { LazyYouTube } from '@/components/LazyYouTube'
 
 ---
 
@@ -31,7 +21,7 @@ A lightweight, native macOS file compression app that intelligently handles PDFs
 - Dark and light mode support
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="hp_orhM4BRY" title="Achico Demo" />
+  <LazyYouTube videoId="hp_orhM4BRY" title="Achico Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -80,7 +70,7 @@ A sleek, native macOS app that removes backgrounds from images with a minimal in
 - Built for macOS 14+
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="bEOeKTvHPcE" title="Figura Demo" />
+  <LazyYouTube videoId="bEOeKTvHPcE" title="Figura Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -165,7 +155,7 @@ A fast, native macOS text comparison tool featuring real-time diff highlighting 
 - Powered by Differ Swift package (v3.0.0+)
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="X8D3zG6Tbyc" title="Medio Demo" />
+  <LazyYouTube videoId="X8D3zG6Tbyc" title="Medio Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -215,7 +205,7 @@ A sleek, native macOS app for managing tasks with intelligent priority scoring a
 - Automatic backups with configurable frequency
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="0B_oJfCIHMc" title="Impulso Demo" />
+  <LazyYouTube videoId="0B_oJfCIHMc" title="Impulso Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -261,7 +251,7 @@ A sleek, native macOS app that helps you make better decisions through structure
 - Built for macOS 14+
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="xayS1gDgJXM" title="Guía Demo" />
+  <LazyYouTube videoId="xayS1gDgJXM" title="Guía Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -308,7 +298,7 @@ A sleek, native macOS app that splits files into three encrypted pieces and lets
 - Built for macOS 14+
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="nt1cRbHE73U" title="Quiebro Demo" />
+  <LazyYouTube videoId="nt1cRbHE73U" title="Quiebro Demo" />
 </div>
 
 ### 📋 Coming in Next Versions
@@ -360,7 +350,7 @@ Note: This app requires macOS version 14+
 **Pro tip:** Throw a folder and it will convert it all
 
 <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
-  <YouTubeEmbed videoId="a7I0XjEKpcs" title="Uno Demo" />
+  <LazyYouTube videoId="a7I0XjEKpcs" title="Uno Demo" />
 </div>
 
 <div className="mt-6 flex gap-2">
