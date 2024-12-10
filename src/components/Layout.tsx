@@ -3,6 +3,7 @@ import { useId } from 'react'
 import { Intro, IntroFooter } from '@/components/Intro'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/Button'
+import { MobileFooter } from '@/components/MobileFooter'
 
 function Timeline() {
   let id = useId()
@@ -98,6 +99,7 @@ function FixedSidebar({
           </div>
         </div>
       </div>
+      <MobileFooter />
     </>
   )
 }
