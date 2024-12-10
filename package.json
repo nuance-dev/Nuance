@@ -25,6 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "feed": "^4.2.2",
+    "framer-motion": "^11.13.5",
     "lucide-react": "^0.456.0",
     "mdast-util-to-string": "^4.0.0",
     "mdx-annotations": "^0.1.4",
