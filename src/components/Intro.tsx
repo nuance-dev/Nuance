@@ -70,7 +70,7 @@ export function Intro() {
         as a designer/developer, I then made them free to use.
       </p>
       <SignUpForm />
-      <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
+      <div className="mt-8 hidden flex-wrap justify-center gap-x-1 gap-y-3 sm:flex sm:gap-x-2 lg:justify-start">
         <IconLink
           href="https://github.com/nuance-dev"
           icon={GitHubIcon}
